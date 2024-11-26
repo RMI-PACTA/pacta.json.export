@@ -202,7 +202,6 @@ test_that("translate_df_contents can be piped to translate_df_headers", {
       inplace = TRUE
     ) |>
     translate_df_headers(
-      data = _,
       id_data = "data_included_table",
       language_select = "DE",
       dictionary = header_de
@@ -218,13 +217,11 @@ test_that("translate_df_headers cannot be piped to translate_df_contents", {
     object = {
       fake_audit |>
         translate_df_headers(
-          data = _,
           id_data = "data_included_table",
           language_select = "DE",
           dictionary = header_de
         ) |>
         translate_df_contents(
-          data = _,
           id_data = "data_included_table",
           dictionary = dictionary_de,
           inplace = TRUE
