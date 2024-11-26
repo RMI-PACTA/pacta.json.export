@@ -1,6 +1,6 @@
 Package: pacta.json.export
 Title: Export PACTA results as JSON files
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: 
     c(person(given = "Alex",
              family = "Axthelm",
@@ -34,3 +34,17 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
+Imports: 
+    countrycode,
+    dplyr,
+    fs,
+    glue,
+    jsonlite,
+    readr,
+    rlang,
+    stringr,
+    tidyr,
+    writexl
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
