@@ -1,0 +1,36 @@
+Package: pacta.json.export
+Title: Export PACTA results as JSON files
+Version: 0.0.0.9000
+Authors@R: 
+    c(person(given = "Alex",
+             family = "Axthelm",
+             role = c("aut", "cre", "ctr"),
+             email = "aaxthelm@rmi.org",
+             comment = c(ORCID = "0000-0001-8579-8565")),
+      person(given = "Monika",
+             family = "Furdyna",
+             role = c("aut", "ctr"),
+             email = "monika.furdyna@gmail.com",
+             comment = c(ORCID = "0000-0002-3728-0646")),
+      person(given = "CJ",
+             family = "Yetman",
+             role = c("aut", "ctr"),
+             email = "cj@cjyetman.com",
+             comment = c(ORCID = "0000-0001-5099-9500")),
+      person(given = "Jackson",
+             family = "Hoffart",
+             role = c("aut", "ctr"),
+             email = "jackson.hoffart@gmail.com",
+             comment = c(ORCID = "0000-0002-8600-5042")),
+      person(given = "Jacob",
+             family = "Kastl",
+             role = c("aut", "ctr"),
+             email = "jacob.kastl@gmail.com"),
+      person(given = "Rocky Mountain Institute",
+             role = c("cph", "fnd"),
+             email = "PACTA4investors@rmi.org"))
+Description: Convert PACTA analysis results to JSON files suitible for use in interactive plots.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
