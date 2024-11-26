@@ -12,7 +12,7 @@ fake_audit <- data.frame(
 dataframe_translations <- read.csv(
   system.file(
     "extdata", "translation", "dataframe_labels.csv",
-    package = "pacta.portfolio.report"
+    package = "pacta.json.export"
   ),
   stringsAsFactors = FALSE
 )
@@ -111,17 +111,17 @@ test_that("translate_df_contents accepts alternate dictionaries", {
 header_dictionary <- read.csv(
   system.file(
     "extdata", "translation", "dataframe_headers.csv",
-    package = "pacta.portfolio.report"
+    package = "pacta.json.export"
   ),
   stringsAsFactors = FALSE
 )
 
-header_de <- pacta.portfolio.report:::replace_contents(
+header_de <- pacta.json.export:::replace_contents(
     header_dictionary,
     "EUR"
   )
 
-header_fr <- pacta.portfolio.report:::replace_contents(
+header_fr <- pacta.json.export:::replace_contents(
     header_dictionary,
     "CAD"
   )

@@ -26,7 +26,7 @@ language.
 translation_data <- read.csv(
   file = system.file(
     "extdata", "translation", "dataframe_labels.csv",
-    package = "pacta.portfolio.report"
+    package = "pacta.json.export"
   )
 )
 de_dictionary <- choose_dictionary_language(translation_data, "de")

@@ -2,7 +2,7 @@ test_that("choose_dictionary_language emits expected translations for en", {
   translation_data <- read.csv(
     file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
-      package = "pacta.portfolio.report"
+      package = "pacta.json.export"
     )
   )
   results <- choose_dictionary_language(translation_data, "en")
@@ -23,7 +23,7 @@ test_that("choose_dictionary_language is case insensitive to language", {
   translation_data <- read.csv(
     file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
-      package = "pacta.portfolio.report"
+      package = "pacta.json.export"
     )
   )
   results <- choose_dictionary_language(translation_data, "EN")
@@ -44,7 +44,7 @@ test_that("choose_dictionary_language emits expected translations for fr", {
   translation_data <- read.csv(
     file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
-      package = "pacta.portfolio.report"
+      package = "pacta.json.export"
     )
   )
   results <- choose_dictionary_language(translation_data, "fr")
@@ -65,7 +65,7 @@ test_that("choose_dictionary_language emits expected translations for es", {
   translation_data <- read.csv(
     file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
-      package = "pacta.portfolio.report"
+      package = "pacta.json.export"
     )
   )
   results <- choose_dictionary_language(translation_data, "es")
@@ -86,7 +86,7 @@ test_that("choose_dictionary_language emits expected translations for de", {
   translation_data <- read.csv(
     file = system.file(
       "extdata", "translation", "dataframe_labels.csv",
-      package = "pacta.portfolio.report"
+      package = "pacta.json.export"
     )
   )
   results <- choose_dictionary_language(translation_data, "de")
@@ -117,7 +117,7 @@ test_that("choose_dictionary_language emits error for invalid language", {
   translation_data <- readr::read_csv(
     system.file(
       "extdata/translation/dataframe_labels.csv",
-      package = "pacta.portfolio.report"
+      package = "pacta.json.export"
     ),
     col_types = readr::cols()
   )
