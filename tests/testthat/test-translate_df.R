@@ -197,7 +197,6 @@ test_that("translate_df_contents can be piped to translate_df_headers", {
     )
   results <- fake_audit |>
     translate_df_contents(
-      data = _,
       id_data = "data_included_table",
       dictionary = dictionary_de,
       inplace = TRUE
